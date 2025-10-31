@@ -51,7 +51,7 @@ fun MainPage(name: String, studentID: String, modifier: Modifier = Modifier) {
             Text("Start Activity Explicitly")
         }
         Button(onClick = {
-            val intent = Intent(context, SecondActivity::class.java)
+            val intent = Intent("com.CSCIAssignment2.app.SWITCH_ACTIVITY")
             context.startActivity(intent)
         }) {
             Text("Start Activity Implicitly")
